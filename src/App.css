@@ -431,3 +431,16 @@ form h2 {
     font-size: 1rem;
   }
 }
+
+/* จอกว้าง: รายการ Loan แสดง 2 คอลัมน์ */
+@media (min-width: 640px) {
+  main {
+    max-width: 1000px;
+  }
+
+  .loan-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+}
